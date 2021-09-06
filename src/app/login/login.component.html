@@ -1,0 +1,49 @@
+<div style="background: #ee9ca7 ;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7) ;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffdde1, #ee9ca7) ; background-attachment: fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+" class="container-fluid d-flex justify-content-center">
+
+
+    <div class="col-lg-6 col-md-12 d-flex align-items-center m-2
+    justify-content-center flex-column">
+
+        <br>
+        <h3 class="font-italic h3 mt-1">Chúc mừng sinh nhật</h3>
+        <h4 class="font-italic h4 font-weight-bold mt-1">Phạm Thị Thủy Tiên</h4>
+
+        <div class="d-flex">
+            <img class="m-2" style="width: 50%; height: 50%;" src="/assets/bd1.webp" alt="" srcset="">
+            <img class="m-2" style="width: 50%; height: 50%;" src="/assets/bd2.webp " alt=" " srcset=" ">
+        </div>
+
+        <div class="card w-100 ">
+            <div class="card-body ">
+
+                <h5>Người nhận quà</h5>
+                <hr>
+                <form [formGroup]="loginForm">
+                    <div class="form-group">
+                        <label>Họ và tên</label>
+                        <input type="email" formControlName="name" class="form-control" placeholder="Vui lòng nhập tên nick name trên messenger">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu</label>
+                        <input type="password" formControlName="pass" class="form-control" placeholder="Vui lòng nhập ngày kỉ niệm">
+                    </div>
+                    <div class="form-group">
+                        <input (click)="OpenGift()" type="submit" class="btn btn-primary  btn-block" value="Nhận quà">
+                    </div>
+
+                </form>
+
+                <hr>
+
+                <a [routerLink]="['/guest']" class="btn btn-info  btn-block">Gửi lời chúc</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>

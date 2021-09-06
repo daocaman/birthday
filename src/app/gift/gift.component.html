@@ -1,0 +1,115 @@
+<div style="background: #ee9ca7 ;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7) ;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffdde1, #ee9ca7) ; background-attachment: fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+" class="container-fluid d-flex justify-content-center">
+    <div class="col-lg-6 col-md-12 d-flex align-items-center m-2
+justify-content-center flex-column">
+
+        <br>
+        <h3 class="font-italic h3 mt-1">Chúc mừng sinh nhật</h3>
+        <h4 class="font-italic h4 font-weight-bold mt-1">
+            <fa-icon style="color: red;" [icon]="faHeart"></fa-icon>
+            Mèo em yêu
+            <fa-icon style="color: red;" [icon]="faHeart"></fa-icon>
+        </h4>
+
+        <img src="/assets/bd5.jpg" style="width: 45%;" class="rounded mx-auto d-block">
+
+
+        <p class="my-3 h5 text-primary w-100 font-weight-bold">Món quà đầu tiên: Những lời chúc mừng sinh nhật thân thương</p>
+
+        <p class="mt-2">
+            Những lời chúc hóa thành trái tim và hiển thị tại đây:
+        </p>
+
+        <p class="text-center">
+            <fa-icon *ngFor="let lc of data; index as i;" class="mx-1" style=" color: red;" [icon]="faHeart"></fa-icon>
+        </p>
+
+        <div class="card   w-100">
+            <div class="card-header">
+                <h5 class="text-info h5">Lời chúc mừng sinh nhật</h5>
+            </div>
+            <img src="/assets/bd3.jpg" height="300px" class="card-img-top" alt="Bánh sinh nhật">
+            <div class="card-body">
+
+                <div *ngFor="let lc of data; index as i;" class="card-body">
+                    <p>Đền từ: <i class="text-primary"><b>{{lc["name"]}}</b></i></p>
+
+                    <p>Nội dung: </p>
+                    <p>
+                        {{lc["loichuc"]}}
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+
+        <div class="card w-100">
+            <div class="card-header">
+                <h5 class="text-info h5">Mèo con</h5>
+            </div>
+            <div class="d-flex justify-content-center align-items-center py-3 my-3">
+                <img class="mx-3 rounded" src="/assets/bd6.jpeg" style="width: 30%; align-self: center;" alt="Mèo con">
+                <img class="mx-3 rounded" src="/assets/bd4.JPG" style="width: 30%; height: 249px; align-self: center;" alt="Mèo con">
+            </div>
+            <div class="card-body">
+
+                <p>
+                    Hì hì, phần trên nếu là những lời chúc từ mọi người thì đây có lẽ là món quà đầu tiên làm từ tay mèo anh :D.
+                </p>
+                <p>
+                    Thật ra thì mèo em có nhớ vì sao tụi mình gọi nhau bằng mèo không. Lúc mèo anh làm con mèo này á. Mèo lại nhớ lại thời ấy. Lúc tụi mình vẫn gọi nhau là (ông / bà). Rồi sau đó tụi mình chính thức quen nhau. Mèo em nói với mèo là nên gọi nhau thế nào. Giữa
+                    muôn vàn lựa chọn chúng mình đã chọn gọi nhau là mèo :D. Mà nói chứ biệt danh mèo này hợp với mèo em ghê :3.
+                    <b style="color: rosybrown;"> Mèo tiên cá :3</b>
+                </p>
+                <p>
+                    <i>
+                        P/s: Mèo làm con mèo này hơi fail á. Ahuhu (hết đồ để buff cho nó rồi :D)
+                    </i>
+                    <br>
+                    <i>P/ss: Hãy mãi làm mèo con yêu quý của mèo anh nhé. Yêu mèo em yêu </i>
+                </p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card w-100">
+            <div class="card-header">
+                <h5 class="text-info h5">Giấc mơ mèo con</h5>
+            </div>
+            <div class="d-flex justify-content-center align-items-center py-3 my-3">
+                <img class="mx-3 rounded" src="/assets/bd7.JPG" style="width: 30%; height: 249px; align-self: center;" alt="Mèo con">
+            </div>
+
+            <div class="card-body">
+                <p>
+                    Hì hì! Không biết mèo em có biết nó là gì không nhỉ :D
+                </p>
+                <p>
+                    Hì thật ra nó là một cái đèn ngủ thôi. Không biết mèo em còn nhớ không. Mèo em đã từng nói từng mong muốn ngước lên sẽ thấy cả một bầu trời đầy sao. Thật lấp lánh và thật an bình. Không biết với mèo ước mơ đó là như thế nào. Nhưng với mèo mỗi giấc mơ
+                    của mèo em điều quan trọng cả. Chỉ cẩn là mong muốn mèo tin ra mèo và mèo em sẽ luôn có thể hoàn thành giấc mơ của chính mình từ nhỏ đến lớn từng cái một. Yêu mèo em yêu nhiều.
+
+                </p>
+
+                <p>
+                    <i>P/s: Mèo biết mèo em làm không khéo. Chụp ảnh cũng không đẹp. Nhưng với mèo dù chỉ là 1 chút có thể thôi mèo cũng hy vọng mèo em luôn hạnh phúc và vui vẻ</i>
+
+                    <i>P/ss: Mãi yêu mèo em yêu</i>
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>
